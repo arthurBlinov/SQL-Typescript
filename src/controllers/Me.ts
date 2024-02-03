@@ -23,7 +23,7 @@ export const login = async(req: Request, res: Response) => {
     try {
         const {tel_number, password} = req?.body;
         const me: MeWithPhoto = await loginQuery(tel_number, password);
-        console.log(me);
+    
         
         const token = generateToken(me?.id.toString());
         if(token){

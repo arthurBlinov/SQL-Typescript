@@ -1,10 +1,10 @@
 import mysql, {Pool} from 'mysql2/promise';
 
 const db: Pool = mysql.createPool({
-    host: '127.0.0.1',
-    user: 'root',
-    password: '',
-    database: 'whatsapp_clone',
+    host: process.env.HOST,
+    user: process.env.USER,
+    password: process.env.PASSWORD,
+    database: process.env.DATABASE,
 })
 
 export default db;

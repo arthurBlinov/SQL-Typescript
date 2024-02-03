@@ -16,10 +16,10 @@ const port =  process.env.PORT || 5000;
 
 app.use(express.json());
 
-app.use('/whatsapp', userRoute);
-app.use('/whatsapp', meRoute);
-app.use('/whatsapp', chatRoute);
-app.use('/whatsapp', messageRoute);
+app.use('/app', userRoute);
+app.use('/app', meRoute);
+app.use('/app', chatRoute);
+app.use('/app', messageRoute);
 app.use(notFound);
 app.use(errorHandler);
 app.listen(port, () => console.log('connected'))

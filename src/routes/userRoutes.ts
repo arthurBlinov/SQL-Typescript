@@ -4,7 +4,7 @@ import {addUsers,updateUserPhoto,
     blockUser,
     retrieveAllUsersOfWhats} from '../controllers/Users';
 import upload from '../multer/storage';
-import { authMiddleware } from '../middleware/auth/auth';
+
 const userRoute = express.Router();
 
 userRoute.get('/search', retrieveAllUsersOfWhats);

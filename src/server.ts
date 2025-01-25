@@ -24,7 +24,3 @@ app.use(notFound);
 app.use(errorHandler);
 app.listen(port, () => console.log('connected'))
 
-
-//qysXKvHzKw3513zY
-//mongodb+srv://blinovarthur2020:<password>@netcraftproject.iowbk7v.mongodb.net/
-
